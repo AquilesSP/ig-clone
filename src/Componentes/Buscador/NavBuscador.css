@@ -1,0 +1,41 @@
+.NavBuscador{
+  background-color: #191919;
+  color: var(--color-text);
+
+
+  padding: 0 16px;
+
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px; */
+
+  position: sticky;
+  top: 0;
+}
+
+
+.btn-heart{
+  background-color: transparent;
+  border: none;
+  color: var(--color-text);
+}
+
+.BuscadorInput{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+  padding: 0 12px 0 8px;
+  border-radius: 8px;
+
+}
+
+.BuscadorInput svg{
+  opacity: .6;
+}
+
+.BuscadorInput input{
+  background-color: transparent;
+  padding: 12px 8px;
+  border: none;
+}

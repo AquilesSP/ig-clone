@@ -1,0 +1,13 @@
+.Home .Post{
+  padding: 16px;
+  color: var(--color-text);
+
+  /* background-color: var(--bg-Card); */
+  border-bottom: 1px solid var(--bg-gris);
+
+}
+
+.Home .Post img{
+  margin-top: 8px;
+  max-width: 100%;
+}

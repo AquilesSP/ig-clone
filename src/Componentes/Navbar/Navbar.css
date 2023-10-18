@@ -1,0 +1,23 @@
+.NavMobile{
+ background-color: var(--dark);
+
+ position: sticky;
+ bottom: 0;
+ color: var(--color-text);
+
+ padding: 4px 16px;
+}
+
+.NavMobile ul{
+  list-style: none;
+}
+
+.NavMobile ul li{
+  /* background-color: plum; */
+  width: calc(100% * .18);
+  /* width: 44px; */
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
