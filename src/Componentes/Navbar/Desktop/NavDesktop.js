@@ -6,20 +6,20 @@ import './NavDesktop.css'
 import { BuscadorInput } from '../../Buscador/NavBuscador';
 
 
-export default function NavDesktop() {
+export default function NavDesktop({...props}) {
 
   const [ showSidebar, setShowSidebar ] = useState(false)
 
   return (
     <nav className='NavDesktop'>
       <Sidebar showSidebar={showSidebar}/>
-      <NavItems showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
+      <NavItems setShowAsideRight={props.setShowAsideRight} showAsideRight={props.showAsideRight} showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
     </nav>
   )
 }
 
 
-function NavItems({showSidebar, setShowSidebar}){
+function NavItems({showSidebar, setShowSidebar, showAsideRight, setShowAsideRight}){
   const navigate = useNavigate();
 
   return(
@@ -46,7 +46,7 @@ function NavItems({showSidebar, setShowSidebar}){
         <button>
           <FiPlusSquare size={uiSizes.iconSizeMid}/>
         </button>
-        <button>
+        <button className={showAsideRight && 'btn-active'} onClick={()=> setShowAsideRight(!showAsideRight)}>
           <FiUser size={uiSizes.iconSizeMid}/>
         </button>
       </section>

@@ -14,9 +14,14 @@
 
 @media only screen and (min-width: 600px) {
 
+  .Home{
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
   .Home .Post{
     /* background-color: palegreen; */
-    max-width: 430px;
+    max-width: var(--SizePost);
     margin: 0 auto;
   }
 

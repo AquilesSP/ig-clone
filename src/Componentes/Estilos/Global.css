@@ -2,7 +2,10 @@
 
 :root {
   --primary: deeppink;
-  --NavbarHeigt: 44px;
+  --SizeNavbarHeigt: 56px;
+  --SizePost: 470px;
+  --SizeLayoutAsideRight: 300px;
+
   --bg-gris: rgb(50, 50, 50);
 
 
@@ -12,11 +15,12 @@
   --bg-Card: white;
 
   --color-text: rgb(250, 250, 250);
+
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: deeppink;
     --body-color: #F5F5F5;
     --bg-navbar: #fff;
     --bg-Card: #F5F5F5;
@@ -32,10 +36,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lexend', sans-serif;
-  color: var(--color-text);
   list-style: none;
 }
 
 body{
   background-color: var(--body-color);
+  color: var(--color-text);
 }

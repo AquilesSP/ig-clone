@@ -34,7 +34,7 @@ function Post(){
 
       <img src="http://via.placeholder.com/640x360" alt=''/>
 
-      <div className="flex-row justify-between margin-top">
+      <div className="flex-row justify-between margin-top-8">
         <div className="flex-row col-gap-8">
           <FiHeart size={uiSizes.iconSizeLit}/>
           <FiMessageCircle size={uiSizes.iconSizeLit}/>
@@ -43,7 +43,7 @@ function Post(){
         <FiAward size={uiSizes.iconSizeLit}/>
       </div>
 
-      <p className='margin-top'>
+      <p className='margin-top-8'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda explicabo similique distinctio temporibus architecto necessitatibus, soluta earum quibusdam reprehenderit vitae aliquam ad dicta deleniti, odit velit corrupti quo mollitia quod recusandae sit consequuntur minima harum natus! Voluptatibus fugiat asperiores facilis officiis et voluptatem quis nulla, ea magnam. Temporibus, officia architecto!
       </p>
     </section>

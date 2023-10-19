@@ -1,17 +1,25 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useState } from 'react'
 // import NavBuscador from '../../Buscador/NavBuscador'
 import NavDesktop from '../../Navbar/Desktop/NavDesktop';
+import Profile from '../../User/Profile/Profile';
 
 export default function LayoutDesktop({children}) {
 
   const Children = children;
+  const [showAsideRight, setShowAsideRight] = useState(true)
 
   return (
     <Suspense fallback={'Cargando...'}>
       {/* <NavBuscador/> */}
-      <div className="grid-desktop">
-        <NavDesktop/>
+      <div className={showAsideRight ? "grid-desktop asideRightActive" :  "grid-desktop"}>
+        <NavDesktop setShowAsideRight={setShowAsideRight} showAsideRight={showAsideRight}/>
         <Children/>
+
+        <div className={showAsideRight ? "asideRight asideRightShow": "asideRight"}>
+          <aside>
+            <Profile/>
+          </aside>
+        </div>
       </div>
     </Suspense>
   )

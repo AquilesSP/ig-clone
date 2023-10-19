@@ -38,7 +38,7 @@
   border: none;
   margin: 0 auto;
   background-color: transparent;
-  border-radius: 8px;
+  border-radius: 12px;
   width: 56px;
   height: 56px;
 
@@ -63,4 +63,9 @@
 .NavDesktop aside hr{
   border-color: var(--bg-transparencia) !important;
   margin-bottom: 16px;
+}
+
+.btn-active{
+  background-color: var(--primary) !important;
+  color: var(--bg-Card);
 }

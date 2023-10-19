@@ -1,4 +1,26 @@
 .grid-desktop{
   display: grid;
-  grid-template-columns: 96px auto;
+  grid-template-columns: 96px auto 0px;
+  transition: all .15s linear;
+}
+
+.asideRightActive{
+  grid-template-columns: 96px auto var(--SizeLayoutAsideRight);
+}
+
+.asideRight{
+  position: sticky;
+  top: 0;
+
+  height: 100vh;
+  overflow-x: hidden;
+
+  box-shadow: 1px 0 0 inset var(--bg-gris);
+  background-color: var(--bg-navbar);
+  transition: all .15s linear;
+}
+
+.asideRight aside{
+  width: var(--SizeLayoutAsideRight);
+  padding: 16px;
 }
