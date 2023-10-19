@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+// import NavBuscador from '../../Buscador/NavBuscador'
+import NavDesktop from '../../Navbar/Desktop/NavDesktop';
 
-export default function LayoutDesktop() {
+export default function LayoutDesktop({children}) {
+
+  const Children = children;
+
   return (
-    <div>LayoutDesktop</div>
+    <Suspense fallback={'Cargando...'}>
+      {/* <NavBuscador/> */}
+      <div className="grid-desktop">
+        <NavDesktop/>
+        <Children/>
+      </div>
+    </Suspense>
   )
 }

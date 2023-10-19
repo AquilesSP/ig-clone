@@ -1,8 +1,8 @@
 .NavBuscador{
-  background-color: #191919;
+  background-color: var(--bg-navbar);
   color: var(--color-text);
 
-
+  height: 56px;
   padding: 0 16px;
 
   /* display: flex;
@@ -12,6 +12,8 @@
 
   position: sticky;
   top: 0;
+
+  border: 1px solid var(--bg-gris);
 }
 
 
@@ -23,7 +25,7 @@
 
 .BuscadorInput{
   border: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-transparencia);
   margin: 8px 0;
   padding: 0 12px 0 8px;
   border-radius: 8px;
@@ -36,6 +38,17 @@
 
 .BuscadorInput input{
   background-color: transparent;
+  /* background-color: plum; */
+  width: 100%;
   padding: 12px 8px;
   border: none;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .NavBuscador{
+    /* background-color: orange; */
+    padding: 0 32px;
+  }
+
 }

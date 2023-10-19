@@ -1,0 +1,4 @@
+.grid-desktop{
+  display: grid;
+  grid-template-columns: 96px auto;
+}

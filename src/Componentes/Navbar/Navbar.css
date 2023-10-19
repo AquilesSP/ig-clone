@@ -1,5 +1,5 @@
 .NavMobile{
- background-color: var(--dark);
+ background-color: var(--bg-navbar);
 
  position: sticky;
  bottom: 0;

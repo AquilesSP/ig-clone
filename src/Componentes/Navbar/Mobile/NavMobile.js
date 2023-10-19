@@ -1,14 +1,24 @@
 import React from 'react'
-import { FiCompass, FiHome, FiPlusSquare, FiUser, FiVideo, IconName } from "react-icons/fi";
+import { FiCompass, FiHome, FiPlusSquare, FiUser, FiVideo } from "react-icons/fi";
 import { uiSizes } from '../../Estilos/constantes';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavMobile() {
+
   return (
     <nav className='NavMobile'>
-      <ul 
-        className='flex-row justify-between align-center'
-      >
-        <li>
+      <NavItems/>
+    </nav>
+  )
+}
+
+function NavItems(){
+  const navigate = useNavigate();
+
+  return(
+    <article>
+      <ul className='flex-row justify-between align-center'>
+        <li onClick={()=> navigate('/')}>
           <FiHome size={uiSizes.iconSizeMid}/>
         </li>
         <li>
@@ -24,6 +34,6 @@ export default function NavMobile() {
           <FiUser size={uiSizes.iconSizeMid}/>
         </li>
       </ul>
-    </nav>
+    </article>
   )
 }

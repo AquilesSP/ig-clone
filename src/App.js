@@ -1,8 +1,20 @@
 import React from 'react'
-import Layout from './Componentes/Layout/Layout'
 import './Componentes/Estilos/Global.css'
 import './Componentes/Estilos/Estructura.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { RoutesIgClone } from './Componentes/Navigator/Routes'
 
 export default function App() {
-  return <Layout/>
+
+  return (
+    <Router>
+      <Routes>
+        {RoutesIgClone.map((ruta,r)=>
+          <Route key={r} path={ruta.path} element={<ruta.main/>}/>
+        )}
+      </Routes>
+    </Router>
+)
+
+  // return <Layout/>
 }

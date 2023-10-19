@@ -1,0 +1,66 @@
+.NavDesktop{
+  position: relative;
+}
+
+.NavDesktop aside{
+  box-shadow: -1px 0 0 inset var(--bg-gris);
+  background-color: var(--bg-navbar);
+
+  padding: 16px;
+  width: 330px;
+
+  position: fixed;
+  top: 0;
+  left: calc(-330px + 96px);
+  height: 100vh;
+
+  transition: all .15s linear;
+}
+
+
+.showSidebar{
+  left: 96px !important;
+}
+
+.NavDesktop .NavItems{
+
+  box-shadow: -1px 0 0 inset var(--bg-gris);
+  background-color: var(--bg-navbar);
+  width: 96px;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+
+
+}
+
+.NavDesktop .NavItems button{
+  border: none;
+  margin: 0 auto;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+
+  display: grid;
+  place-items: center;
+  transition: all .3s linear;
+  cursor: pointer;
+}
+
+.btn-toggle{
+  margin: 8px auto 32px auto !important;
+}
+
+.NavDesktop .NavItems button:hover{
+  background-color: var(--bg-transparencia);
+}
+
+.NavDesktop aside h1{
+  font-size: 2rem;
+}
+
+.NavDesktop aside hr{
+  border-color: var(--bg-transparencia) !important;
+  margin-bottom: 16px;
+}

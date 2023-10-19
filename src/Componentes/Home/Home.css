@@ -9,5 +9,15 @@
 
 .Home .Post img{
   margin-top: 8px;
-  max-width: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .Home .Post{
+    /* background-color: palegreen; */
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
 }
