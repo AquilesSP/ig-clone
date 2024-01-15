@@ -1,5 +1,6 @@
 import Actividad from "../Actividad/Actividad";
 import Home from "../Home/Home";
+import Lab from "../Lab/Lab";
 import Layout from "../Layout/Layout";
 
 export const RoutesIgClone = [
@@ -11,5 +12,9 @@ export const RoutesIgClone = [
   {
     path:'/actividad',
     main: () => <Layout children={Actividad}/>
+  },
+  {
+    path:'/lab',
+    main: () => <Layout children={Lab}/>
   },
 ]

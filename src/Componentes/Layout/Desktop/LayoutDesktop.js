@@ -6,7 +6,7 @@ import Profile from '../../User/Profile/Profile';
 export default function LayoutDesktop({children}) {
 
   const Children = children;
-  const [showAsideRight, setShowAsideRight] = useState(true)
+  const [showAsideRight, setShowAsideRight] = useState(false)
 
   return (
     <Suspense fallback={'Cargando...'}>

@@ -1,0 +1,13 @@
+.Lab{
+  /* background-color: plum; */
+  padding: 32px;
+}
+
+.LabSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 32px 0 ;
+  border-bottom: 1px solid grey;
+}

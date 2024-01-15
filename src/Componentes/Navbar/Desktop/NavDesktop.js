@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FiCompass, FiHeart, FiHome, FiInstagram, FiMenu, FiPlusSquare, FiSearch, FiUser, FiVideo, FiX } from "react-icons/fi";
+import { BiAtom } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom';
 import { uiSizes } from '../../Estilos/constantes';
 import './NavDesktop.css'
@@ -46,6 +47,10 @@ function NavItems({showSidebar, setShowSidebar, showAsideRight, setShowAsideRigh
         <button>
           <FiPlusSquare size={uiSizes.iconSizeMid}/>
         </button>
+        <button onClick={()=> navigate('/lab')}>
+          <BiAtom size={uiSizes.iconSizeMid}/>
+        </button>
+
         <button className={showAsideRight && 'btn-active'} onClick={()=> setShowAsideRight(!showAsideRight)}>
           <FiUser size={uiSizes.iconSizeMid}/>
         </button>

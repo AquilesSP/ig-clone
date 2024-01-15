@@ -1,0 +1,59 @@
+
+.TimeLine{
+  padding: 8px 32px;
+
+  border-left: 8px dashed lightgray;
+  margin-bottom: 8px;
+}
+
+.TimeLine article{
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+  border-radius: 12px;
+
+}
+
+.TimeLine .TimeLine-head{
+  padding: 32px 32px 0  32px;
+}
+
+.TimeLine .TimeLine-body{
+  padding: 16px 32px 32px 32px;
+}
+
+
+.active{
+  border-left: 8px solid rgb(43, 174, 76);
+  margin-bottom: 0;
+
+  position: relative;
+
+}
+
+.active .TimeLine-head h3{
+  color: rgb(43, 174, 76);
+}
+
+.active::before{
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: calc(-1rem - 4px);
+  transform: translateY(50%);
+
+  padding: 1rem;
+  
+  background-color: rgb(43, 174, 76);
+  border-radius: 50%;
+
+}
+
+.timeLineExtra-warning{
+  border: 1px solid goldenrod;
+  background-color: rgba(218, 165, 32, 0.2);
+  margin: 8px 0 -8px 0;
+
+  border-radius: 8px;
+  padding: 16px;
+  color: rgb(121, 91, 16);
+}
